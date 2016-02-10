@@ -1,0 +1,69 @@
+<template name="business">
+
+  {{#ionBody}} 
+
+      {{#ionSideMenuContainer}}
+
+        {{#ionSideMenus}}
+
+          {{#ionSideMenu}}
+            <div class="side">
+              <li class="borderbottom">
+                <span class="col col-100">
+                  SLIDES
+                  <i class="icon ion-grid icon-right"></i>
+                </span>
+              </li>
+              <div class="slides">
+                  <a href="/agribusinessfiles"><li class="col col-80">
+                    <span>#</span> Agribusiness 
+                  </li></a>
+                  <a href="/bankingfiles"><li class="col col-80">
+                    <span>#</span> Banking 
+                  </li></a>
+                  <a href="/hrmgtfiles"><li class="col col-80">
+                    <span>#</span> Human Resource
+                  </li></a>
+                  <a href="/marketingfiles"><li class="col col-80">
+                    <span>#</span> Marketing 
+                  </li></a>
+                  <a href="/mgtstudiesfiles"><li class="col col-80">
+                    <span>#</span> Management Studies 
+                  </li></a>
+              </div>
+              <a href="/busibuzz" class="bordertop"><li>
+                <span class="col col-100">
+                  <i class="icon ion-android-calendar icon-left"></i>
+                  BUZZ        
+                </span>
+              </li></a>
+              <a href="/busimarket" class="bordertop borderbottom"><li>
+                <span class="col col-100 ">
+                  <i class="icon ion-bag icon-left"></i>
+                  MART
+                </span>
+              </li></a>
+            </div>
+          {{/ionSideMenu}}
+
+          {{#ionSideMenu side="right"}}
+              <div class="side">
+
+          </div>
+          {{/ionSideMenu}}
+
+        {{/ionSideMenus}}
+
+        {{#ionSideMenuContent}}
+          {{> ionNavBar class="bar-positive"}}
+          
+          {{#ionNavView}}
+            {{> yield}}
+          {{/ionNavView}}
+
+        {{/ionSideMenuContent}}
+
+      {{/ionSideMenuContainer}}
+
+    {{/ionBody}}
+  </template>

@@ -1,0 +1,66 @@
+<template name="theology">
+
+  {{#ionBody}}
+
+      {{#ionSideMenuContainer}}
+
+        {{#ionSideMenus}}
+
+          {{#ionSideMenu}}
+            <div class="side">
+              <li class="borderbottom">
+                <span class="col col-100">
+                  SLIDES
+                  <i class="icon ion-grid icon-right"></i>
+                </span>
+              </li>
+              <div class="slides">
+                  <a href="/biblicalfiles"><li class="col col-80">
+                    <span>#</span> Biblical & Historical Studies
+                  </li></a>
+                  <a href="/christianfiles'"><li class="col col-80">
+                    <span>#</span> Christian Education
+                  </li></a>
+                  <a href="/churchfiles"><li class="col col-80">
+                    <span>#</span> Church Admistration
+                  </li></a>
+                  <a href="/theologyfiles"><li class="col col-80">
+                    <span>#</span> Family Counseling & theology
+                  </li></a>
+              </div>
+              <a href="/theobuzz" class="bordertop"><li>
+                <span class="col col-100">
+                  <i class="icon ion-android-calendar icon-left"></i>
+                  BUZZ        
+                </span>
+              </li></a>
+              <a href="/theomarket" class="bordertop borderbottom"><li>
+                <span class="col col-100 ">
+                  <i class="icon ion-bag icon-left"></i>
+                  MART
+                </span>
+              </li></a>
+            </div>
+          {{/ionSideMenu}}
+
+          {{#ionSideMenu side="right"}}
+              <div class="side">
+
+          </div>
+          {{/ionSideMenu}}
+
+        {{/ionSideMenus}}
+
+        {{#ionSideMenuContent}}
+          {{> ionNavBar class="bar-positive"}}
+          
+          {{#ionNavView}}
+            {{> yield}}
+          {{/ionNavView}}
+
+        {{/ionSideMenuContent}}
+
+      {{/ionSideMenuContainer}}
+
+    {{/ionBody}}
+  </template>

@@ -1,0 +1,25 @@
+<template name="buzzupdate">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="{{path}}"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Buzzupdate</h1>
+  {{/contentFor}}
+  {{#ionView}}
+    {{#ionContent}}
+      <div>
+          <form class="buzz">
+            <input type="file" class="file buzzfile" name="body">
+            <label class="item item-input item-stacked-label">
+              <span class="input-label">body</span>
+              <input type="text" name="newbuzz" placeholder="event body">
+            </label>
+            <button type="submit" class="button button-block button-positive">
+              submit
+            </button>
+          </form>
+      </div>
+
+    {{/ionContent}}
+  {{/ionView}}
+</template>

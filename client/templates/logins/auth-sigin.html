@@ -1,0 +1,38 @@
+<template name="signin">
+  {{> ionNavBar class="bar-positive"}}
+
+  {{#contentFor 'headerTitle'}}
+    <h1 class="title">Sign In</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList}}
+        <form>
+          {{#if errorMessages}}
+            <div class="list-errors">
+              {{#each errorMessages}}
+                <div class="list-item">{{this}}</div>
+              {{/each}}
+            </div>
+          {{/if}}
+
+          <div class="input-symbol  {{errorClass 'email'}}">
+            <label class="item item-input">
+              <input type="text" name="email" placeholder="Your Email">
+            </label>
+          </div>
+
+          <div class="input-symbol  {{errorClass 'password'}}">
+            <label class="item item-input">
+              <input type="password" name="password" placehollder="Password">
+            </label>
+          </div>
+
+          <button type="submit" class="button button-block button-positive">Sigin In</button>
+
+        </form>
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>
