@@ -4,21 +4,104 @@ $loading-font-size: 22px;
 @import '../../.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/_ionic';
 @import '../../.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/_ionicons';
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.welcome {
+  height: 100%;
+  .uni {
+    padding: 60% 0px;
+    text-align: center;
+    h1 {
+      color: #b2b2b2;
+      font-size: 70px;
+      font-weight: 400;
+      font-family: 'Ubuntu', sans-serif;
+    }
+  }
+}
+
+.dashboard {
+  background-color: #5F0D3C;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  height: 100%;
+  .uni {
+    padding: 15% 0px;
+    text-align: center;
+    h1 {
+      color: #b2b2b2;
+      font-size: 40px;
+      font-weight: 400;
+    }
+  }
+}
+
+.down {
+  bottom: 150px;
+  position: absolute; 
+  width: 50%;
+  margin: 0px 25%;
+  form {
+    input {
+      margin-bottom: 5px;
+    }
+  }
+  hr {
+      width: 100%;
+      color: #79104C;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .background {
   background-color: #F5F5F5;
 }
 
+.full-image {
+  padding: 0px 5px;
+}
+
+.center {
+  padding: 0px 15px;
+  text-align: center;
+}
+
+.button-clear.button-clear {
+  background: #390824;
+  color: #fff;
+}
+
+.button.button-positive {
+  border-color: #79104C;
+  background-color: #fff;
+  color: #79104C;
+}
+
+.button.button-positive:hover {
+  border-color: #79104C;
+  background-color: #79104C;
+  color: #fff;
+}
+
 .ionic-body.platform-android {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Droid Sans', sans-serif;
-    font-weight: 700; 
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500; 
 }
 
   .tab-item {
-    font-family: 'Droid Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
   }
 }
 
@@ -70,7 +153,7 @@ button {
 }
 
 .bar.bar-positive .title {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: #DFD1D9;
 }
@@ -113,8 +196,8 @@ li {
 }
 
 .side li {
-  font-family: 'Droid Sans', sans-serif;
-  font-weight: 700; 
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500; 
   padding: 5px 5px 5px 5px;
   color: #fff;
 }
@@ -152,8 +235,8 @@ li {
 .slides li {
   padding: 10px 5px 10px 5px;
   border-bottom: 0px;
-  font-family: 'Droid Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
   color: #696969;
     h4 {
       color: #888;
@@ -184,7 +267,7 @@ a {
 }
 
 .menu-right {
-  background: linear-gradient(#292C50, #648880);
+  background-color: #5F0D3C;
 }
 
 /*
@@ -222,7 +305,7 @@ FILE CONTENTS
   color: #fff;
   width: 100%;
   border: 0px;
-  background-color: #293f50;
+  background-color: #68264D;
   margin-top: 5px;
   padding-top: 2px;
   padding-bottom: 2px;

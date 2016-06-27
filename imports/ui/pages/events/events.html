@@ -1,0 +1,37 @@
+<template name="events">  
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+       {{> ionIcon icon='navicon'}}
+    </button>
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Event</h1>
+  {{/contentFor}}
+  
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="background">
+        <div class="row">
+          <div class="col col-100">
+            {{#each posts}}
+              {{> eventpost}}
+            {{/each}}
+            </div>
+          </div>
+        </div>
+
+    {{/ionContent}}
+  {{/ionView}}
+</template>
+
+<template name="eventpost">
+  <div class="list card center">
+    <div class="item item-body">
+      <img class="full-image" src="{{src}}">
+      <p>
+        {{text}}
+      </p>
+    </div>
+    <a href="{{pathFor 'buzzpage'}}" class="button button-clear button-positive">Read More</a>
+  </div>
+</template>

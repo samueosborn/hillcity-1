@@ -1,0 +1,69 @@
+<template name="join">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="{{path}}"}}
+  {{/contentFor}}
+
+  {{#contentFor 'headerTitle'}}
+    <h1 class="title">Join</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList}}
+        <form>
+          {{#if errorMessages}}
+            <div class="list-errors">
+              {{#each errorMessages}}
+                <div class="list-item">{{this}}</div>
+              {{/each}}
+            </div>
+          {{/if}}
+
+          <div class="input-symbol  {{errorClass 'username'}}">
+            <label class="item item-input item-stacked-label">
+              <input type="text" name="username" placeholder="Your Name">
+            </label>
+          </div>
+
+          <div class="input-symbol  {{errorClass 'email'}}">
+            <label class="item item-input item-stacked-label">
+              <input type="text" name="email" placeholder="Your Email">
+            </label>
+          </div>
+
+          <div class="input-symbol  {{errorClass 'password'}}">
+            <label class="item item-input item-stacked-label">
+              <input type="password" name="password" placeholder="Password">
+            </label>
+          </div>
+
+          <div class="input-symbol  {{errorClass 'confirm'}}">
+            <label class="item item-input item-stacked-label">
+              <input type="password" name="confirm" placeholder="Confirm Password">
+            </label>
+          </div>
+
+          <label class="col offset-10 input-symbol">
+              Choose your Department. 
+              <select class="form-control" name="department">
+                  <option>Applied Science</option>
+                  <option>Business</option>
+                  <option>Law</option>
+                  <option>Arts & Social Sciences</option>
+                  <option>Theology & Missions</option>
+              </select>
+              <select class="form-control" name="year">
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+            </select>
+          </label>
+
+
+          <button type="submit" class="button button-block button-positive">Join Now</button>
+
+        </form>
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>

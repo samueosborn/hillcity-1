@@ -1,0 +1,40 @@
+<template name="welcome">
+    {{#ionView}}
+      {{#ionContent}}
+      <div class="welcome">
+        <div class="down">
+          <span class="uni">Hill</span>
+          <form>
+            {{#if errorMessages}}
+              <div class="list-errors">
+                {{#each errorMessages}}
+                  <div class="list-item">{{this}}</div>
+                {{/each}}
+              </div>
+            {{/if}}
+
+            <div class="input-symbol  {{errorClass 'email'}}">
+              <label class="item item-input">
+                <input type="text" name="email" placeholder="Your Email">
+              </label>
+            </div>
+
+            <div class="input-symbol  {{errorClass 'password'}}">
+              <label class="item item-input">
+                <input type="password" name="password" placeholder="Password">
+              </label>
+            </div>
+
+            <button type="submit" class="button button-block button-positive">Sigin In</button>
+
+
+
+          </form>
+          <hr>
+
+          <a href="/join" class="button button-block button-positive">Join</a>
+        </div>
+      </div>
+      {{/ionContent}}
+    {{/ionView}}
+</template>

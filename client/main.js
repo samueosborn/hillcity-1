@@ -1,0 +1,11 @@
+import '../imports/ui/pages/layout/layout.html';
+import '../imports/ui/pages/layout/logslayout.html';
+import '../imports/ui/pages/layout/main.js';
+import '../imports/ui/pages/loading/loading.html';
+import '../imports/ui/pages/news/news.js';
+import '../imports/ui/pages/news/newsupdate.js';
+import '../imports/ui/pages/events/events.js';
+import '../imports/ui/pages/events/eventsupdate.js';
+import '../imports/ui/pages/logins/auth-sigin.js';
+import '../imports/ui/pages/logins/auth-join.js';
+import '../imports/startup/client';

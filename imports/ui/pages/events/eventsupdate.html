@@ -1,0 +1,28 @@
+<template name="eventsupdate">  
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+       {{> ionIcon icon='navicon'}}
+    </button>
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Event update</h1>
+  {{/contentFor}}
+  
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="background">
+        <div class="row">
+          <div class="col col-100">
+            <form>
+              <input type="file" name="image">     
+              <input type="text" name="text">
+              <input type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+
+    {{/ionContent}}
+  {{/ionView}}
+</template>
+

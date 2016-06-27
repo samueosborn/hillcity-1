@@ -1,0 +1,25 @@
+<template name="newsupdate"> 
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="/buzz"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">News updates</h1>
+  {{/contentFor}}
+  
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="background">
+        <div class="row">
+          <div class="col col-100">
+            <form>
+              <input type="file" name="image">     
+              <input type="text" name="news">
+              <input type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+
+    {{/ionContent}}
+  {{/ionView}}
+</template>

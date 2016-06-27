@@ -1,0 +1,38 @@
+<template name="news">  
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+       {{> ionIcon icon='navicon'}}
+    </button>
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">News</h1>
+  {{/contentFor}}
+  
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="background">
+        <div class="row">
+          <div class="col col-100">
+            {{#each posts}}
+              {{> post}}
+            {{/each}}
+            </div>
+          </div>
+        </div>
+
+    {{/ionContent}}
+  {{/ionView}}
+</template>
+
+<template name="post">
+  <div class="list card center">
+    <div class="item item-body">
+      <img class="full-image" src="{{src}}">
+      <p>
+        {{news}}
+      </p>
+    </div>
+    <a href="{{pathFor 'newspage'}}" class="button button-clear button-positive">Read More</a>
+  </div>
+</template>
+

@@ -1,0 +1,56 @@
+<template name="main">
+
+  {{#ionBody}} 
+
+      {{#ionSideMenuContainer}}
+
+        {{#ionSideMenus}}
+
+          {{#ionSideMenu}}
+            <div class="side">
+              <li class="borderbottom">
+                <span class="col col-100">
+                  COURSE SLIDES
+                  <i class="icon ion-grid icon-right"></i>
+                </span>
+              </li>
+              <div class="slides">
+                  <a href="/news"><li class="col col-80">
+                    <span>#</span> News
+                  </li></a>
+                  <a href="/events"><li class="col col-80">
+                    <span>#</span> Events
+                  </li></a>
+              </div>
+            </div>
+          {{/ionSideMenu}}
+
+          {{#ionSideMenu side="right"}}
+            <div class="row">
+              <div class="col col-100">
+                <div class="side">
+                  <h3>Report an issue</h3>
+                  <form>
+                    <input type="text" name="issue">
+                    <button type="submit" class="button button-block button-positive">Submit</button> 
+                  </form>
+                </div>
+              </div>
+            </div>
+          {{/ionSideMenu}}
+
+        {{/ionSideMenus}}
+
+        {{#ionSideMenuContent}}
+          {{> ionNavBar class="bar-positive"}}
+          
+          {{#ionNavView}}
+            {{> yield}}
+          {{/ionNavView}}
+
+        {{/ionSideMenuContent}}
+
+      {{/ionSideMenuContainer}}
+
+    {{/ionBody}}
+  </template>
